@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역 관련 태그</title>
+    <style>
+        div{
+            border: 1px solid;
+        }
+        .a{
+            background-color: red;
+        }
+        .b{
+            background-color: lightsalmon;
+        }
+        #c{
+            background-color: yellow;
+        }
+        #d{
+            background-color: greenyellow;
+        }
+        #e{
+            background-color: rgba(81, 98, 255, 0.856);
+        }
+        #f{
+            background-color: rgb(96, 74, 219);
+        }
+        #g{
+            background-color: rgb(136, 123, 219);
+        }
+        span{
+            border: 1px solid;
+        }
+        .c{
+            background-color: yellow;
+        }
+        .d{
+            background-color: tomato;
+        }
+        .e{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <h2>영역 관련 태그</h2>
+    <!--
+        블럭 요소
+        : 한 줄 단위로 영역을 차지하는 요소
+        : 줄바꿈이 적용되어 이미 존재하는 태그의 다음 줄에 영역 잡힘
+        : p, h1~6, pre, div
+
+        인라인 요소
+        : 내용물(content) 단위로 영역을 차지하는 요소
+        : 줄바꿈이 적용되지 않아 옆으로 영역이 잡힘 (br로 넘겨야 함)
+        : b, strong, s, mark, img, span
+    -->
+    <h3>div태그와 span태그의 차이1 : 줄바꿈 적용</h3>
+    <h4>> div태그 : 블럭요소(한줄 영역차지)</h4>
+    <div class="a">
+        첫번째 영역
+    </div>
+    <div class="b">
+        두번째 영역
+    </div>
+    <div id="c">
+        세번째 영역
+    </div>
+    <div id="d">
+        네번째 영역
+    </div>
+    <div id="e">
+        다섯번째 영역
+    </div>
+    <div id="f">
+        여섯번째 영역
+    </div>
+    <div id="g">
+        일곱번째 영역
+    </div>
+    <h4>> span 태그 : 인라인요소(content 영역차지)</h4>
+    <span class="c">
+        첫번째 영역
+    </span>
+    <span class="d">
+        첫번째 영역
+    </span>
+    <span class="e">
+        첫번째 영역
+    </span>
+    <hr>
+    <h3>div태그와 span태그의 차이2 : 영역 지정 방식</h3>
+    <h4>> div 태그 : 사각형 박스로 영역을 지정</h4>
+    <div style="background-color: wheat;">
+        쓸쓸함과 별 다 마디씩 피어나듯이 슬퍼하는 프랑시스 위에 소학교 거외다. 애기 파란 새워 하나 마리아 오면 계십니다. 가을로 계절이 어머니, 보고, 것은 있습니다. 하나에 너무나 딴은 나의 언덕 이제 풀이 겨울이
+        부끄러운 있습니다. 무엇인지 보고, 너무나 별 않은 이름과, 있습니다. 멀리 못 당신은 계집애들의 별 이름을 잠, 버리었습니다. 둘 노새, 가난한 당신은 같이 어머니, 아직 이런 지나고 봅니다. 계집애들의 잠, 덮어
+        계십니다. 강아지, 이름을 소학교 라이너 아이들의 이름과 이름을 있습니다. 부끄러운 하나 그리고 다 너무나 시와 책상을 듯합니다. 까닭이요, 라이너 부끄러운 멀리 내 밤이 추억과 그리고 청춘이 있습니다.
+        
+        패, 묻힌 겨울이 내 봄이 애기 내 아이들의 없이 거외다. 봄이 벌써 계집애들의 쉬이 까닭입니다. 어머님, 새워 가슴속에 동경과 있습니다. 하나에 이름과, 까닭이요, 한 별 된 봅니다. 봄이 비둘기, 차 된 가득
+        봅니다. 오는 하나에 않은 된 오면 이웃 까닭입니다. 지나가는 추억과 라이너 파란 너무나 별에도 시와 거외다. 하나에 것은 무성할 밤이 오는 듯합니다. 차 이름을 많은 있습니다. 추억과 남은 북간도에 있습니다.
+    </div>
+    <h4>> span 태그 : 문장 단위로 영역을 지정</h4>
+    <span style="background-color: aquamarine;">
+        쓸쓸함과 별 다 마디씩 피어나듯이 슬퍼하는 프랑시스 위에 소학교 거외다. 애기 파란 새워 하나 마리아 오면 계십니다. 가을로 계절이 어머니, 보고, 것은 있습니다. 하나에 너무나 딴은 나의 언덕 이제 풀이 겨울이
+        부끄러운 있습니다. 무엇인지 보고, 너무나 별 않은 이름과, 있습니다. 멀리 못 당신은 계집애들의 별 이름을 잠, 버리었습니다. 둘 노새, 가난한 당신은 같이 어머니, 아직 이런 지나고 봅니다. 계집애들의 잠, 덮어
+        계십니다. 강아지, 이름을 소학교 라이너 아이들의 이름과 이름을 있습니다. 부끄러운 하나 그리고 다 너무나 시와 책상을 듯합니다. 까닭이요, 라이너 부끄러운 멀리 내 밤이 추억과 그리고 청춘이 있습니다.
+        
+        패, 묻힌 겨울이 내 봄이 애기 내 아이들의 없이 거외다. 봄이 벌써 계집애들의 쉬이 까닭입니다. 어머님, 새워 가슴속에 동경과 있습니다. 하나에 이름과, 까닭이요, 한 별 된 봅니다. 봄이 비둘기, 차 된 가득
+        봅니다. 오는 하나에 않은 된 오면 이웃 까닭입니다. 지나가는 추억과 라이너 파란 너무나 별에도 시와 거외다. 하나에 것은 무성할 밤이 오는 듯합니다. 차 이름을 많은 있습니다. 추억과 남은 북간도에 있습니다.
+    </span>
+    <hr>
+    <h2>iframe 태그</h2>
+    <p>현재 이 문서내에 다른 웹 페이지를 추가하는 태그</p>
+    <iframe src="3_표관련태그.html" frameborder="1" width="600px" height="800px"></iframe>
+    <iframe width="900" height="500" src="https://www.youtube.com/embed/u2nc6eHXDFI" frameborder="1"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+<br>
