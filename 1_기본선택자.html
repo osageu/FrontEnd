@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 기본선택자</title>
+    <style>
+        /* CSS 주석 */
+        *{
+            /* font-style: italic; */
+        }
+        pre{
+            color: blue;
+        }
+        h2, h3{
+            color: red;
+        }
+        #a1{
+           color: aqua; 
+        }
+        #a2{
+            color: blueviolet;
+            background-color: darkblue;
+        }
+        .aa{
+            color: chocolate;
+        }
+        .cc{
+            background-color: darkcyan;
+        }
+        .bb{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS 기본 선택자</h2>
+    <p>
+        <b>선택자란?</b> <br>
+        특정 HTML 요소를 선택하고자할 때 사용하는 기능<br>
+        해당 요소를 선택해서 원하는 스타일과 기능을 적용 가능
+    </p>
+    <h3>1. 모든 선택자 (*) </h3>
+    해당 문서상의 모든 요소들을 선택
+    <pre>
+        &lt;style>
+        * {
+            스타일 속성:값;
+            스타일 속성:값;
+        }
+        &lt;/style>
+    </pre>
+
+    <h3>2. 태그 선택자 (태그명) </h3>
+    해당 문서상의 같은 태그들을 선택
+    <pre>
+        &lt;style>
+        tag {
+            스타일 속성:값;
+            스타일 속성:값;
+        }
+        &lt;/style>
+    </pre>
+
+    <h3>3. 클래스 선택자 (.클래스명) </h3>
+    해당 문서내에 내가 원하는 여러 요소를 선택
+    <pre>
+        &lt;style>
+        .class {
+            스타일 속성:값;
+            스타일 속성:값;
+        }
+        &lt;/style>
+    </pre>
+
+    <li class="aa bb">테스트1</li>
+    <li class="aa">테스트1</li>
+    <li class="bb aa cc">테스트1</li>
+    <li class="cc bb">테스트1</li>
+
+    <h3>4. 아이디 선택자 (#아이디명)</h3>
+    해당 문서상의 특정 HTML 요소 하나만을 선택
+    <pre>
+        &lt;style>
+        #id {
+            스타일 속성:값;
+            스타일 속성:값;
+        }
+        &lt;/style>
+    </pre>
+
+    <ol>
+        <li id="a1">테스트1</li>
+        <li id="a2">테스트1</li>
+        <li >테스트1</li>
+        <li>테스트1</li>
+    </ol>
+
+
+</body>
+</html>
