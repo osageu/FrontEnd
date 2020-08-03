@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타 선택자</title>
+    <link rel="stylesheet" href="resources/css/02.css">
+</head>
+<body>
+    <h2>1. 속성 선택자</h2>
+    <div class="div-class" name="name1">div1</div>
+    <div class="div-class" name="name2">div2</div>
+    <div class="div-class" name="name3 name1">div3</div>
+    <div class="class-div" name="name3">div4</div>
+
+    <h2>2. 자손 선택자와 후손 선택자</h2>
+    <div id="test1">
+        <h4>자손입니다.</h4>
+        <h4>나도 자손입니다.</h4>
+        <ul>나도 자손입니다.
+            <li>ul의 자손이면서 div의 후손입니다.</li>
+            <li>ul의 자손이면서 div의 후손입니다.</li>
+        </ul>
+    </div>
+    
+    <h2>3. 동위 선택자</h2>
+    <div id="div-test">div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+
+    <h2>4. 반응 선택자</h2>
+    <div id="active-test">active테스트</div>
+    <br>
+    <div id="hover-test">hover테스트</div>
+
+    <h2>5. 상태 선택자</h2>
+    <input type="checkbox" name="fruit" value="apple"> <label>사과</label>
+    <input type="checkbox" name="fruit" value="banana"> <label>바나나</label>
+    <input type="checkbox" name="fruit" value="kiwi"> <label>키위</label>
+    <br><br>
+    아이디 : <input type="text" required name="userId" placeholder="아이디 입력" maxlength="15"><br>
+    비밀번호 : <input type="text" required name="userPw" placeholder="비밀번호 입력"><br>
+    검색 : <input type="search" name="search">
+    <br><br>
+    <h3>상품 선택 : </h3>
+    <select name="product">
+        <option value="">선택안함</option>
+        <option value="" disabled>카키 S [품절]</option>
+        <option value="">카키 M</option>
+        <option value="">카키 L</option>
+    </select>
+    <br>
+    <button>클릭가능</button>
+    <button disabled>클릭불가능</button>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

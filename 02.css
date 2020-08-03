@@ -1,0 +1,93 @@
+/*CSS 영역*/
+/* 1. 속성 선택자 */
+div[name=name1]{
+    background-color: yellow;    
+}
+div[name=name3]{
+    background-color: red;
+}
+div[name~=name1]{
+    background-color: blue;
+}
+div[class|=class]{
+    background-color: wheat;
+}
+div[name^=na]{
+    background-color: tomato;
+}
+div[class$=class]{
+    background-color: violet;
+}
+div[class*=i]{
+    color: white;
+    background-color: black;
+}
+.div-class[name~=name3]{
+   color: red;
+}
+
+/* 2. 자손 선택자와 후손 선택자 */
+#test1>h4{
+    background-color: burlywood;
+}
+#test1 li{
+    color: red;
+}
+#test1>ul>li{
+    background-color: black;
+}
+
+/* 3. 동위 선택자 */
+#div-test{
+    background-color: red;
+}
+#div-test+div{
+    background-color: yellow;
+}
+/* #div-test~div{
+    background-color: turquoise;
+} */
+
+/* 4. 반응 선택자 */
+div[id$=test]{
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+}
+#active-test:active{
+    background-color: yellow;
+    color: red;
+}
+#hover-test:hover{
+    background-color: yellow;
+    color: red;
+    cursor: pointer;
+}
+
+/* 5. 상태 선택자 */
+input[type=checkbox]:checked{
+    width: 20px;
+    height: 20px;
+}
+input[type=checkbox]:checked+label{
+    font-size: 20px;
+}
+input[name=userId]:focus, input[name=userPw]:focus{
+    color: red;
+    background-color: black;
+}
+input:focus{
+    background-color: yellow;
+}
+option:enabled{
+    background-color: tomato;
+}
+option:disabled{
+    background-color: blue;
+}
+button:enabled{
+    background-color: blueviolet;
+}
+button:disabled{
+    background-color: brown;
+}
