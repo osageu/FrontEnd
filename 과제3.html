@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+        }
+        th{
+            background-color: pink;
+            color: white;
+        }
+        td{
+            background-color: yellow;
+        }
+        input{
+            background-color:lightskyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption style="color: red;"><b><big><big>KH 정보교육원 강의</big></big></b></caption>
+        <tr>
+            <th>관</th>
+            <th>강의장</th>
+            <th>인원수</th>
+            <th>강의명</th>
+        </tr>
+        <tr>
+            <td rowspan="6">1관</td>
+            <td rowspan="2">I강의장</td>
+            <td rowspan="2">30명</td>
+            <td>오전 : 강보람 <input type="button" value="신청하기"></td>
+        </tr>
+        <tr>
+            <td>오후 : 강보람 <input type="button" value="신청하기"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">G강의장</td>
+            <td rowspan="2">23명</td>
+            <td>오전 : 박신우 <input type="button" value="신청하기"></td>
+        </tr>
+        <tr>
+            <td>오후 : 박신우 <input type="button" value="신청하기"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">H강의장</td>
+            <td rowspan="2">27명</td>
+            <td>오전 : 유승제 <input type="button" value="신청하기"></td>
+        </tr>
+        <tr>
+            <td>오후 : 유승제 <input type="button" value="신청하기"></td>
+        </tr>
+        <tr>
+            <th colspan="5" style="color: blue; background-color: red;">많이 신청해주세요!</th>
+        </tr>
+    </table>
+</body>
+</html>
